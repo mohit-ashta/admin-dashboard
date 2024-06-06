@@ -1,11 +1,12 @@
 "use client";
 
-import { Primarytext } from "@/components/primary-text/page";
-import DashbaordPage from "../main-layout";
+import { Primarytext } from "@/components/atoms/primary-text/page";
+
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { IconText } from "@/components/icon-text/page";
+import { IconText } from "@/components/atoms/icon-text/page";
 import { useRouter } from "next/navigation";
 import { ADMIN_ROUTES } from "@/constants/routes";
+import DashbaordPage from "@/components/templates/main-layout";
 const Settings = () => {
   const router = useRouter();
 
