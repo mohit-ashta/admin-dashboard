@@ -4,7 +4,7 @@ export type signInType = {
 };
 
 export type signUpType = {
-  username: string;
+  name: string;
   password: string;
   email: string;
 };
@@ -15,7 +15,7 @@ export interface cardDataProps {
   price: string;
   brand: string;
   currency: string;
-  image: File[];
+  image: string;
 }
 
 export interface cardProps {

@@ -1,5 +1,5 @@
+import DashbaordPage from "@/components/organisms/main-layout/page";
 import DashboardTemplate from "@/page/dashboard-template";
-import DashbaordPage from "@/components/templates/main-layout";
 import React from "react";
 
 const Dashboard = () => {
