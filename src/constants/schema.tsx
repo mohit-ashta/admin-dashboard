@@ -9,7 +9,7 @@ export const signInSchema = yup
 
 export const signUpSchema = yup
   .object({
-    username: yup.string().required("username is required"),
+    name: yup.string().required("name is required"),
     password: yup.string().required("password is required"),
     email: yup.string().email("Email is invalid").required("Email is required"),
   })

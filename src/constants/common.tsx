@@ -1,2 +1,2 @@
-export const API_URL = "https://192.168.100.7:3000/api/v1/";
+export const API_URL = process.env.NEXT_PUBLIC_BASE_URL;
 export const TOKEN = "user-info";

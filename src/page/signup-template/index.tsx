@@ -29,7 +29,7 @@ export const SignUpTemplate = () => {
     try {
       await addUser(data);
       reset();
-      router.push(ADMIN_ROUTES.LOGIN.absolutePath);
+      // router.push(ADMIN_ROUTES.LOGIN.absolutePath);
     } catch (error) {
       console.error("Error adding user:", error);
       alert("Error adding user. Please try again.");
@@ -57,11 +57,11 @@ export const SignUpTemplate = () => {
                     type="text"
                     className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-primary text-black"
                     placeholder="Enter your user"
-                    {...register("username", { required: true })}
+                    {...register("name", { required: true })}
                   />
-                  {errors?.username && (
+                  {errors?.name && (
                     <p className="text-[red] text-xs mt-1">
-                      {errors?.username?.message}
+                      {errors?.name?.message}
                     </p>
                   )}
                 </div>

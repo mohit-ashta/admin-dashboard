@@ -2,14 +2,14 @@ import { API_URL } from "@/constants/common";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 interface AddUserData {
-  username: string;
+  name: string;
   email: string;
   password: string;
 }
 
 interface AddUserResponse {
   id: string;
-  username: string;
+  name: string;
   email: string;
   password: string;
 }
@@ -20,12 +20,12 @@ export const userSlice = createApi({
   tagTypes: ["User"],
   endpoints: (builder) => ({
     getUsers: builder.query({
-      query: () => "/auth",
+      query: () => "/register",
       providesTags: ["User"],
     }),
     addUser: builder.mutation<AddUserResponse, AddUserData>({
       query: (data) => ({
-        url: `/auth`,
+        url: `/register`,
         method: "POST",
         body: data,
       }),
